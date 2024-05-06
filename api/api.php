@@ -110,7 +110,7 @@ function handle_captcha_validation($data) {
     
     
 
-    $secret_key = '6Lf7CUUpAAAAANsLc58UbfJaC1hu3Z7JWZACsted'; // Replace with your actual secret key
+    $secret_key = 'removed for security reasons'; // Replace with your actual secret key
     $verified_email;
       if(get_field('email', $email_id)){
         $verified_email = get_field('email', $email_id);
