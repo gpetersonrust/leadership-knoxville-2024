@@ -1,0 +1,70 @@
+
+// Updates
+
+.update-filter-buttons-grid {
+    display: flex;
+    justify-content: center;
+    @apply flex-col md:flex-row flex-wrap xl:flex-nowrap;
+  }
+  
+  button.update-filter-button {
+ 
+    padding: 1rem 4rem;
+    background: #ffffff;
+    color: #309bb6;
+    font-size: 1.35rem;
+    margin: 1rem;
+    cursor: pointer;
+    border: 1px solid;
+    transition: .5s linear all;
+    @apply w-full md:w-2/5 xl:w-fit;
+  }
+  
+  button.update-filter-button:hover, button.update-filter-button.active {
+    background: #309bb6;
+    color: #fff;
+  }
+  
+  .update-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  a.update-card {
+   
+    margin: 2rem 0;
+    @apply w-full md:w-[48%]  lg:w-[32%] xl:w-[24%]  ;
+  }
+  
+  .update-card__thumbnail {
+    width: 100%;
+    aspect-ratio: 563/379;
+  }
+  
+  .update-card__thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  h4.update-card__title {
+      text-align: center;
+      font-size: 1.625rem;
+      color: #3B3B3B;
+      margin: 1rem 0;
+  }
+  
+  h5.update-card__date {
+      color: #3B3B3B;
+      text-align: center;
+      font-size: 1.4rem;
+  }
+
+
+  // between 1030 and 1300 px
+  @media (min-width: 1030px) and (max-width: 1300px) {
+    .update-grid {
+      justify-content: space-around;
+    }
+  }
